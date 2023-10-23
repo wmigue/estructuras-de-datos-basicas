@@ -65,7 +65,7 @@
 
 
 
-## CUANDO USAR UNA U OTRA
+## CARACTERISTICAS
 
     Arreglos (Arrays):
         Conviene usar arreglos cuando necesitas acceso rápido a elementos por índice y el tamaño de la colección es fijo o conocido de antemano.
@@ -95,3 +95,41 @@
     Conjuntos (Sets) y Mapas (Maps):
         Conviene usar conjuntos cuando necesitas almacenar elementos únicos sin duplicados.
         Conviene usar mapas cuando necesitas asociar valores con claves únicas para una búsqueda eficiente.
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+## CUANDO USAR UNA U OTRA
+
+   ArrayList vs. LinkedList:
+
+        ArrayList:
+            Escenario: Mantener una lista de contactos en una aplicación de gestión de contactos.
+            Razón: Los contactos se acceden con frecuencia mediante búsquedas por nombre o identificación. El acceso por índice es rápido y las inserciones y eliminaciones no son frecuentes.
+
+        LinkedList:
+            Escenario: Implementar una cola de tareas en una aplicación de procesamiento de trabajos en segundo plano.
+            Razón: Las tareas se agregan al final de la cola y se eliminan a medida que se procesan. Las inserciones y eliminaciones son frecuentes, y no es necesario un acceso rápido por índice.
+
+    HashSet vs. HashMap:
+
+        HashSet:
+            Escenario: Mantener una lista de correos electrónicos únicos en una lista de suscriptores.
+            Razón: Necesitas garantizar que no haya correos electrónicos duplicados, pero no necesitas mantener un mapeo entre correos electrónicos y nombres.
+
+        HashMap:
+            Escenario: Implementar un sistema de reservas de vuelos en el que necesitas asignar un asiento a un pasajero.
+            Razón: Necesitas mapear asientos a pasajeros, de modo que puedas buscar rápidamente a quién pertenece un asiento dado.
+
+    TreeSet vs. TreeMap:
+
+        TreeSet:
+            Escenario: Mantener una lista de eventos programados en orden cronológico.
+            Razón: Necesitas que los eventos se almacenen en orden según su fecha y hora, de modo que puedas recuperar fácilmente el próximo evento programado.
+
+        TreeMap:
+            Escenario: Implementar un sistema de registro de llamadas telefónicas que registra la duración de las llamadas de cada número de teléfono.
+            Razón: Necesitas mapear números de teléfono a la duración de las llamadas, y deseas que estén ordenados por número de teléfono.
